@@ -1,5 +1,13 @@
 // http://ionicframework.com/docs/theming/
+.toolbar-background {
+    background-color: blue
+}
 
+.toolbar-title.toolbar-title-md,
+.toolbar-title.toolbar-title-ios,
+.toolbar-title.toolbar-title-wp{ 
+    color:white
+}
 
 // App Global Sass
 // --------------------------------------------------

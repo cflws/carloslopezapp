@@ -9,11 +9,17 @@
   <ion-navbar>
     <ion-title>profile</ion-title>
   </ion-navbar>
-  <img src="http://www.professionalclick.com/images/default.jpg" alt="Paris" class="center">
-  <h4> email: ilikefood@gmail.com</h4>
-<h4> phone: 123-456-7810</h4>
-<h4> other: lol</h4>
-<button type="button">VIDEOCHAT</button>
+  
+  <div id="profileContainer">
+    <img src="http://www.professionalclick.com/images/default.jpg" alt="Paris" class="center" width=100px height=100px>
+    <h4> email: ilikefood@gmail.com</h4>
+    <h4> phone: 123-456-7810</h4>
+    <h4> other: lol</h4>
+  </div>
+<div style="text-align:center;">
+    <button ion-button (click)=" facetime()">FaceTime</button>
+    
+</div>
 </ion-header>
 
 <ion-content padding>

@@ -5,18 +5,18 @@ import { MyApp } from './app.component';
 
 
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProfilePage } from '../pages/profile/profile';
+import { RatingPage } from '../pages/rating/rating';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TabsPage,
-    ProfilePage
+    ProfilePage,
+    RatingPage
   ],
   imports: [
     BrowserModule,
@@ -26,8 +26,8 @@ import { ProfilePage } from '../pages/profile/profile';
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage,
-    ProfilePage
+    ProfilePage,
+    RatingPage
   ],
   providers: [
     StatusBar,

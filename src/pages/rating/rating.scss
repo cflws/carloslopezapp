@@ -1,0 +1,14 @@
+page-rating {
+    #menu ul{
+        list-style : none;
+    }
+    #menu li{
+        display: inline;
+    }
+}
+
+.stars{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
