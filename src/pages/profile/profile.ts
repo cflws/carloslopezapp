@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RatingPage } from '../rating/rating';
+import { HomePage } from '../home/home';
+import { ProfilePageModule } from './profile.module';
 
 /**
  * Generated class for the ProfilePage page.
@@ -22,11 +24,18 @@ export class ProfilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
   }
+
+
+
+  
   facetime(){
     window.open('facetime:carlosfern.1021@gmail.com','_self');
-    if (!window.closed) {
-      this.navCtrl.push(RatingPage);
-    }
+    
+    this.navCtrl.push(RatingPage);
+
+
+  
+
     
     
   }
