@@ -29,7 +29,7 @@ export class ProfilePage {
 
   
   facetime(){
-    window.open('facetime:carlosfern.1021@gmail.com','_self');
+    window.open('facetime:ninjagohame@yahoo.com','_self');
     
     this.navCtrl.push(RatingPage);
 
