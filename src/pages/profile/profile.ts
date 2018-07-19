@@ -18,10 +18,9 @@ export class ProfilePage {
     const options: InAppBrowserOptions = {
       hardwareback: "yes"
     }
-    this.iab.create('facetime://greatisnate11@gmail.com', '_system', options).on('loadstart')
-      .subscribe((event: InAppBrowserEvent) => {
-        console.log('exit')
-        console.log(event);
-      })
+    const browser = this.iab.create('facetime://ernestopimentel1@gmail.com', '_system', options);
+    browser.on('loadstop').subscribe(event => {
+      console.log('facetime')
+   });
   }
 }

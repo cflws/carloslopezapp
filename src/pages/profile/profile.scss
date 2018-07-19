@@ -7,9 +7,24 @@ page-profile {
 }
 div.a {
     text-align: center;
+    
 }
 
 #profileContainer{
-    margin: auto;
+    //margin: auto;
     text-align: center;
+   margin-top: 35%;
+
+    
+}
+#background{
+    background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/professional-background-images-8.jpg");
+    width:100%;
+    height:200px;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    margin-left: -15px;
+    margin-top: -20px;
+    float: left;
 }
