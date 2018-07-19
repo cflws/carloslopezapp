@@ -1,42 +1,27 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RatingPage } from '../rating/rating';
-import { HomePage } from '../home/home';
-import { ProfilePageModule } from './profile.module';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { InAppBrowser, InAppBrowserOptions, InAppBrowserEvent } from '@ionic-native/in-app-browser';
 
-/**
- * Generated class for the ProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public iab: InAppBrowser) {
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
-  }
-
-
-
-  
-  facetime(){
-    window.open('facetime:ninjagohame@yahoo.com','_self');
-    
-    this.navCtrl.push(RatingPage);
-
-
-  
-
-    
-    
+  open(){
+    console.log('open');
+    const options: InAppBrowserOptions = {
+      hardwareback: "yes"
+    }
+    this.iab.create('facetime://greatisnate11@gmail.com', '_system', options).on('loadstart')
+      .subscribe((event: InAppBrowserEvent) => {
+        console.log('exit')
+        console.log(event);
+      })
   }
 }

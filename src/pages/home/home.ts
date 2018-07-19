@@ -13,7 +13,7 @@ export class HomePage {
   }
 
   openPage(){
-    this.navCtrl.push(ProfilePage)
+    this.navCtrl.push(ProfilePage);
   }
 
 }
