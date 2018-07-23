@@ -21,6 +21,7 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@fortawesome/fontawesome-free": "^5.1.1",
     "@ionic-native/camera": "^4.10.0",
     "@ionic-native/core": "4.9.1",
     "@ionic-native/in-app-browser": "^4.10.0",

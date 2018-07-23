@@ -10,38 +10,27 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-    <p>Quality</p>
-  <ion-icon name=“star-outline”></ion-icon>
-  <div id="menu">
-    <ion-list>
-      <div class="stars">
-      <ion-item>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-item>
-    </div>
-    <div class="stars">
-      <ion-item>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-item>
-    </div>
-    <div class="stars">
-      <ion-item>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-item>
-    </div>
-    <div class="stars">
-      <ion-item>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-item>
-    </div>
-    <div class="stars">
-      <ion-item>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-item>
-    </div>
-    </ion-list>
+
+  <h1 align=center> Evaluation </h1>
+  <h2 align=center> Knowledge Obtained</h2>
+  <div class="star-container">
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[0], 'far': !activeStars[0]}" (click)="activateStars(1)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[1], 'far': !activeStars[1]}" (click)="activateStars(2)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[2], 'far': !activeStars[2]}" (click)="activateStars(3)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[3], 'far': !activeStars[3]}" (click)="activateStars(4)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[4], 'far': !activeStars[4]}" (click)="activateStars(5)"></span>
+
   </div>
- 
+  <div style="text-align:center;">
+      <button id="SubmitButton" ion-button (click)="open()">Submit</button>
+      
+    </div>
 </ion-content>
+
+
+
+
+<div id="SubBut">
+    <button type="button">Submit</button>
+  </div>
