@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the RatingPage page.
@@ -14,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'rating.html',
 })
 export class RatingPage {
+
+
   public activeStars = [
     false,
     false,
@@ -24,22 +27,28 @@ export class RatingPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad RatingPage');
   }
 
-  activateStars(num){
-    if(num === 1){
-      this.activeStars = [ true, false, false, false, false];
-    } else  if(num === 2){
-      this.activeStars = [ true, true, false, false, false];
-    }else   if(num === 3){
-      this.activeStars = [ true, true, true, false, false];
-    }else  if(num === 4){
-      this.activeStars = [ true, true, true, true, false];
-    }else  if(num == 5){
-      this.activeStars = [ true, true, true, true, true];
+  activateStars(num) {
+    if (num === 1) {
+      this.activeStars = [true, false, false, false, false];
+    } else if (num === 2) {
+      this.activeStars = [true, true, false, false, false];
+    } else if (num === 3) {
+      this.activeStars = [true, true, true, false, false];
+    } else if (num === 4) {
+      this.activeStars = [true, true, true, true, false];
+    } else if (num == 5) {
+      this.activeStars = [true, true, true, true, true];
     }
   }
 
+
+open(){
+  
+  this.navCtrl.popToRoot();
+}
 }

@@ -13,18 +13,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProfilePage } from '../pages/profile/profile';
 import { RatingPage } from '../pages/rating/rating';
 import { ChoicePage } from '../pages/choice/choice';
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ProfilePage,
-    RatingPage,
-    ChoicePage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

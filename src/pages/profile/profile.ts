@@ -22,6 +22,9 @@ export class ProfilePage {
     browser.on('loadstop').subscribe(event => {
       console.log('facetime')
    });
-   this.navCtrl.push(RatingPage)
+   setTimeout(() => {
+      this.navCtrl.push(RatingPage);
+  }, 5000);
+   
   }
 }
