@@ -24,7 +24,7 @@ export class ProfilePage {
    });
    setTimeout(() => {
       this.navCtrl.push(RatingPage);
-  }, 5000);
+  }, 3000);
    
   }
 }
