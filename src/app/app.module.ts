@@ -17,6 +17,9 @@ import { ChoicePage } from '../pages/choice/choice';
   declarations: [
     MyApp,
     HomePage,
+    ProfilePage,
+    RatingPage,
+    ChoicePage,
   ],
   imports: [
     BrowserModule,
